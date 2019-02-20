@@ -1,19 +1,19 @@
 # Table of Contents
-1. [Problem](README.md#Introduction)
-1. [How to run the code](README.md#Running the Code)
-1. [Details of the code](README.md#Details of the code)
+1. [Introduction](README.md#Introduction)
+1. [Running the Code](README.md#Running-the-Code)
+1. [Details of the code](README.md#Details-of-the-code)
 
 ## Introduction
 This repository is contributed in response to Insight Data Science challenge, regarding loading, pivoting and sorting a data set with large number of rows (>24 million records). 
 
-## Running the Code
+## Running-the-Code
 Although the code is tested with specified big data set, the data is not shared in this repository due to space constrained. 
 
 For this challenge assignment, I used Python and specifically Pandas package to load, manipulate and write the data. Additionally I used sys package to allow running the functions inside the *.py.
 
 To run the code from the main repository directory, where “run.sh” resides, one should run ./run.sh. Within Run.sh the code is calling the “pharmacy_counting.py”, by specifying the input file location “./input/itcont.txt” and output file location “./output/top_cost_drug.txt”. In order to run the code using the big data set, it is required that the cvs file be copied to the input folder and the “run.sh” file be updated with the correct put file name, before running the shel script. 
 
-## Details of the code
+## Details-of-the-code
 The ask is to load the dataset and pivot it around the Drug_Name column and calculate the sum of Drug_Cost and number of individual prescribers. The code is segmented in different steps, each printing the function being executed, in order to determine which step was the bottleneck during processing the big data file. 
 
 As mentioned above, I used Pandas package from Python to load and manipulate the data. After loading the data and during the code development, I delete the columns that are not used anymore. The is to open up the memory used by python that can help running the code even for big data on laptops and avoid requiring super computers. 
